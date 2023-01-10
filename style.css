@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.igra {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+.skok {
+    animation: skok 0.3s linear;
+}
+
+#dino {
+    width: 120px;
+    height: 70px;
+    background-image: url(./resorsi/dino.png);
+    background-size: auto 70px;
+    position: relative;
+    top: 130px;
+}
+#kamen {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    top: 95px;
+    left: 570px;
+    background-image: url(./resorsi/kamen.png);
+    background-size: 30px 40px;
+    animation: kamen-blok 1.2s infinite linear;
+}
+@keyframes kamen-blok {
+    0% {
+        left: 600px;
+    }
+    100%{
+        left: -30px;
+    }
+}
+
+@keyframes skok {
+    0% {
+        top: 130px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 60px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 130px;
+    }
+}
